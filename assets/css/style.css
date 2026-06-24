@@ -1,0 +1,98 @@
+/* =============================================
+   ESPERANZA LAKE RESORT - GUEST DIRECTORY
+   STYLESHEET BY NATASHA | K(L)S, 2026
+   ============================================= */
+
+
+/* ------------BASE / WHOLE PAGE ----------- */
+
+body {
+    margin: 0;
+    background: #f7f5f3;
+    color: #362e25;
+    font-family: 'Averia Serif Libre', Georgia, serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* --------------- HERO (top dark band) -------------- */
+
+.hero {
+    background: #362e25;
+    color: #f7f5f3;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+
+/* -------------- HERO: LOGO --------------- */
+
+.hero img {
+    display: block;
+    width: 220px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+
+/* ----------------- DIVIDER LINE (reused) ----------- */
+
+.divider {
+    border: none;
+    width: 46px;
+    height: 1px;
+    background: #b5946e;
+    margin: 24px auro;
+}
+
+
+/* -------------- HERO: TAGLINE ------------- */
+
+.tagline {
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: #f7f5f3;
+  margin: 0;
+}
+
+
+/* --------------- WELCOME SECTION ----------- */
+
+.welcome {
+    padding: 60px 40px 40px;
+    text-align: center;
+}
+
+
+/* ------------ ANIMATION ---------- */
+
+@keyframes fadeOutEyebrow {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+.eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    color: #b5946e;
+    margin: 0;
+    animation: fadeOutEyebrow 3s ease-out 2.5s forwards;
+}
+
+.body-text {
+    font-family: 'averia Serif Libre', Georgia, serif;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.65;
+    color: #5b4f42;
+    max-width: 540px;
+    margin: 0 auto;
+}
