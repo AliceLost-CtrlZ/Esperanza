@@ -44,7 +44,7 @@ body {
     width: 46px;
     height: 1px;
     background: #b5946e;
-    margin: 24px auro;
+    margin: 24px auto;
 }
 
 
@@ -152,5 +152,5 @@ body {
     font-weight: 300;
     font-size: 15px;
     color: #8a7d6e;
-    margin-top; 8px;
+    margin-top: 8px;
 }
