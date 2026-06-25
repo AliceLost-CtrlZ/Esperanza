@@ -79,7 +79,7 @@ body {
 .eyebrow {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 19px;
     letter-spacing: 0.36em;
     text-transform: uppercase;
     color: #b5946e;
@@ -95,4 +95,62 @@ body {
     color: #5b4f42;
     max-width: 540px;
     margin: 0 auto;
+}
+
+
+/* ------------ MENU ROWS ----------- */
+
+.menu {
+    padding: 8px 20px 0;
+}
+
+.menu-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 16px;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid rgba(54, 46, 37, 0.12);
+    transition: background-color 0.3s ease;
+}
+
+.menu-row:first-child {
+    border-top: 1px solid rgba(54, 46, 37, 0.12);
+}
+
+.menu-row:hover {
+    background-color: rgba(181, 148, 110, 0.08);
+}
+
+.menu-row::after {
+    content: "→";
+    color: #b5946e;
+    font-size: 22px;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.menu-row:hover::after {
+    transform: translateX(4px);
+}
+
+.menu-title {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #362e25;
+}
+
+.menu-subtitle {
+    display: block;
+    font-family: 'Averia Serif Libre', Georgia, serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    color: #8a7d6e;
+    margin-top; 8px;
 }
