@@ -206,20 +206,6 @@ body {
    ====================================== */
 
 
-   /* ------------ PAGE TITLE ----------- */
-
-   .page-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    letter-spacing: 0.36em;
-    text-transform: uppercase;
-    color: #b5946e;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-   }
-
    /* -------------- PAGE SECTIONS ------------ */
 
    .info-sections {
@@ -307,18 +293,6 @@ body {
     opacity: 0.7;
    }
 
-
-   /* =======================================
-      RESPONSIVE PHONE ADJUSTMENT
-      ======================================= */
-
-      @media (max-width: 600px) {
-        .page-title {
-            font-size: 18px;
-            letter-spacing: 0.3em;
-        }
-    }
-    
 
     /* =========================================
        PAGE 3 IN-ROOM DINING (and minibar later)
