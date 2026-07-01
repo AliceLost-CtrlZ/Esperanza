@@ -3,13 +3,21 @@
    STYLESHEET BY NATASHA | L(K)S, 2026
    ============================================= */
 
+:root {
+    --brown: #362e25; /* warm dark brown - banners, body text */
+    --gold: #b5946e; /* tan-gold - accents, active states */
+    --cream: #f7f5f3; /* warm cream - page background */
+    --muted: #5b4f42; /* softer brown - body of text */
+    --faded: #8a7d6e; /* faded secondary - italic notes, subs */
+}
+
 
 /* ------------BASE / WHOLE PAGE ----------- */
 
 body {
     margin: 0;
-    background: #f7f5f3;
-    color: #362e25;
+    background: var(--cream);
+    color: var(--brown);
     font-family: 'Averia Serif Libre', Georgia, serif;
     font-weight: 300;
     font-size: 16px;
@@ -20,8 +28,8 @@ body {
 /* --------------- HERO (top dark band) -------------- */
 
 .hero {
-    background: #362e25;
-    color: #f7f5f3;
+    background: var(--brown);
+    color: var(--cream);
     padding: 80px 40px;
     text-align: center;
 }
@@ -43,7 +51,7 @@ body {
     border: none;
     width: 46px;
     height: 1px;
-    background: #b5946e;
+    background: var(--gold);
     margin: 24px auto;
 }
 
@@ -56,7 +64,7 @@ body {
   font-size: 11px;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: #f7f5f3;
+  color: var(--cream);
   margin: 0;
 }
 
@@ -82,7 +90,7 @@ body {
     font-size: 17px;
     letter-spacing: 0.36em;
     text-transform: uppercase;
-    color: #b5946e;
+    color: var(--gold);
     margin: 0;
     animation: fadeOutEyebrow 3s ease-out 2.5s forwards;
 }
@@ -92,7 +100,7 @@ body {
     font-weight: 300;
     font-size: 17px;
     line-height: 1.65;
-    color: #5b4f42;
+    color: var(--muted);
     max-width: 540px;
     margin: 0 auto;
 }
@@ -111,21 +119,21 @@ body {
     padding: 28px 16px;
     text-decoration: none;
     color: inherit;
-    border-bottom: 1px solid rgba(54, 46, 37, 0.12);
+    border-bottom: 1px solid rgb(from var(--brown) r g b / 0.12);
     transition: background-color 0.3s ease;
 }
 
 .menu-row:first-child {
-    border-top: 1px solid rgba(54, 46, 37, 0.12);
+    border-top: 1px solid rgb(from var(--brown) r g b / 0.12);
 }
 
 .menu-row:hover {
-    background-color: rgba(181, 148, 110, 0.08);
+    background-color: rgb(from var(--gold) r g b / 0.08);
 }
 
 .menu-row::after {
     content: "→";
-    color: #b5946e;
+    color: var(--gold);
     font-size: 22px;
     font-weight: 300;
     transition: transform 0.3s ease;
@@ -142,7 +150,7 @@ body {
     font-size: 13px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: #362e25;
+    color: var(--brown);
 }
 
 .menu-subtitle {
@@ -151,7 +159,7 @@ body {
     font-style: italic;
     font-weight: 300;
     font-size: 15px;
-    color: #8a7d6e;
+    color: var(--faded);
     margin-top: 8px;
 }
 
@@ -159,8 +167,8 @@ body {
 /* ------------ FOOTER INFO STRIP --------------- */
 
 .info-strip {
-    background: #362e25;
-    color: #f7f5f3;
+    background: var(--brown);
+    color: var(--cream);
     padding: 36px 24px;
     display: flex;
     justify-content: center;
@@ -182,14 +190,14 @@ body {
     font-size: 11px;
     letter-spacing: 0.34em;
     text-transform: uppercase;
-    color: #b5946e;
+    color: var(--gold);
 }
 
 .info-value {
     font-family: 'Averia Serif Libre', Georgia, serif;
     font-weight: 300;
     font-size: 15px;
-    color: #f7f5f3;
+    color: var(--cream);
 }
 
 
@@ -226,7 +234,7 @@ body {
    }
 
    .info-section + .info-section {
-    border-top: 1px solid rgba(181, 148, 110, 0.35);
+    border-top: 1px solid rgb(from var(--gold) r g b / 0.35);
    }
 
    .section-title {
@@ -235,7 +243,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.34em;
     text-transform: uppercase;
-    color: #362e25;
+    color: var(--brown);
     margin: 0 0 20px;
    }
 
@@ -244,14 +252,14 @@ body {
     font-weight: 300;
     font-size: 17px;
     line-height: 1.7;
-    color: #5b4f42;
+    color: var(--muted);
     margin: 0;
    }
 
    .section-body-secondary {
     font-size: 16px;
     font-style: italic;
-    color: #8a7d6e;
+    color: var(--faded);
     margin-top: 16px;
    }
 
@@ -266,7 +274,7 @@ body {
     font-size: 11px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: #b5946e;
+    color: var(--gold);
     text-decoration: none;
     transition: opacity 0.3s ease;
    }
@@ -290,7 +298,7 @@ body {
     font-size: 13px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: #b5946e;
+    color: var(--gold);
     text-decoration: none;
     transition: opacity 0.3s ease;
    }
@@ -323,7 +331,7 @@ body {
         font-style: italic;
         font-weight: 300;
         font-size: 14px;
-        color: #8a7d6e;
+        color: var(--faded);
         text-align: center;
         margin: 0 auto 24px;
         padding: 0 32px;
@@ -353,18 +361,18 @@ body {
         font-size: 12px;
         letter-spacing: 0.28em;
         text-transform: uppercase;
-        color: #8a7d6e;
+        color: var(--faded);
         border-bottom: 1px solid transparent;
         transition: color 0.3s ease, border-color 0.3s ease;
        }
 
        .chip:hover {
-        color: #362e25;
+        color: var(--brown);
        }
 
        .chip.active {
-        color: #b5946e;
-        border-bottom-color: #b5946e;
+        color: var(--gold);
+        border-bottom-color: var(--gold);
        }
 
        /* ---------- MENU SECTIONS ---------- */
@@ -388,7 +396,7 @@ body {
         font-style: italic;
         font-weight: 300;
         font-size: 13px;
-        color: #8a7d6e;
+        color: var(--faded);
         text-align: center;
         margin: 0;
         padding: 24px 32px 8px;
@@ -406,8 +414,8 @@ body {
         .topbar {
         position: relative;
         padding: 18px 24px;
-        background: #f7f5f3;
-        border-bottom: 1px solid rgba(54, 46, 37, 0.12);
+        background: var(--cream);
+        border-bottom: 1px solid rgb(from var(--brown) r g b / 0.12);
         min-height: 20px;
         }
 
@@ -422,7 +430,7 @@ body {
         font-size: 11px;
         letter-spacing: 0.3em;
         text-transform: uppercase;
-        color: #b5946e;
+        color: var(--gold);
         text-decoration: none;
         transition: opacity 0.3s ease;
         }
@@ -437,7 +445,7 @@ body {
           ==================================== */
 
           .page-banner {
-            background: #362e25;
+            background: var(--brown);
             padding: 80px 32px;
             text-align: center;
           }
@@ -448,7 +456,7 @@ body {
             font-size: 18px;
             letter-spacing: 0.36em;
             text-transform: uppercase;
-            color: #f7f5f3;
+            color: var(--cream);
             margin: 0;
           }
 
