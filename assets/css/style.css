@@ -120,15 +120,18 @@ body {
     text-decoration: none;
     color: inherit;
     border-bottom: 1px solid rgb(from var(--brown) r g b / 0.12);
+    border-bottom: 1px solid rgba(54, 46, 37, 0.12);
     transition: background-color 0.3s ease;
 }
 
 .menu-row:first-child {
     border-top: 1px solid rgb(from var(--brown) r g b / 0.12);
+    border-top: 1px solid rgba(54, 46, 37, 0.12);
 }
 
 .menu-row:hover {
     background-color: rgb(from var(--gold) r g b / 0.08);
+    background-color: rgba(181, 148, 110, 0.08);
 }
 
 .menu-row::after {
@@ -221,6 +224,7 @@ body {
 
    .info-section + .info-section {
     border-top: 1px solid rgb(from var(--gold) r g b / 0.35);
+    border-top: 1px solid rgba(181, 148, 110, 0.35);
    }
 
    .section-title {
@@ -390,6 +394,7 @@ body {
         padding: 18px 24px;
         background: var(--cream);
         border-bottom: 1px solid rgb(from var(--brown) r g b / 0.12);
+        border-bottom: 1px solid rgba(54, 46, 37, 0.12);
         min-height: 20px;
         }
 

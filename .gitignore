@@ -1,0 +1,10 @@
+# Windows / OneDrive artifacts
+desktop.ini
+Thumbs.db
+
+# macOS artifacts
+.DS_store
+
+# Editor / OS temp files
+*.swp
+*~
