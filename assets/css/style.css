@@ -541,15 +541,13 @@ body {
            }
 
            .menu-item_variants {
-            margin-top: 6px;
             margin-bottom: 2rem;
            }
 
-           .variant-row {
+           .variant-row + .variant-row {
             display: flex;
             justify-content: flex-end;
             gap: 2rem;
-            padding: 4px 0;
            }
 
            .variant-time {
@@ -557,6 +555,7 @@ body {
             font-weight: 300;
             font-size: 11px;
             color: var(--muted);
+            align-items: baseline;
            }
 
            .variant-price {
@@ -564,6 +563,7 @@ body {
             font-weight: 300;
             font-size: 11px;
             color: var(--muted);
+            align-items: baseline;
            }
 
 
