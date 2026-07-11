@@ -540,7 +540,7 @@ body {
             margin-top: 2px;
            }
 
-           .menu-items_variants {
+           .menu-item_variants {
             margin-top: 6px;
             margin-bottom: 2rem;
            }
@@ -549,7 +549,7 @@ body {
             display: flex;
             justify-content: flex-end;
             gap: 2rem;
-            padding: 4px, 0;
+            padding: 4px 0;
            }
 
            .variant-time {
