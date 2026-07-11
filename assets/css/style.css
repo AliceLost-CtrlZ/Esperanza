@@ -513,6 +513,65 @@ body {
           }
 
 
+        /* ============================
+           SPA MENU
+           ============================ */
+
+           .variant-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+           }
+
+           .menu-item_left {
+            flex: 1;
+            padding-right: 2rem;   
+           }
+                     
+           .menu-item_label {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            font-size: 9px;
+            color: var(--brown);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            display: block;
+            margin-top: 2px;
+           }
+
+           .menu-items_variants {
+            margin-top: 6px;
+            margin-bottom: 2rem;
+           }
+
+           .variant-row {
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+            padding: 4px, 0;
+           }
+
+           .variant-time {
+            font-family: 'Averia Serif Libre', Georgia, serif;
+            font-weight: 300;
+            font-size: 11px;
+            color: var(--muted);
+           }
+
+           .variant-price {
+            font-family: 'Averia Serif Libre', Georgia, serif;
+            font-weight: 300;
+            font-size: 11px;
+            color: var(--muted);
+           }
+
+
+
+
+
+
+
 
 
 
