@@ -522,6 +522,7 @@ body {
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 1rem;
+            align-items: baseline;
            }
 
            .menu-item_left {
@@ -544,10 +545,14 @@ body {
             margin-bottom: 2rem;
            }
 
-           .variant-row + .variant-row {
+           .variant-row {
             display: flex;
             justify-content: flex-end;
             gap: 2rem;
+           }
+
+           .variant-row + .variant-row {
+            margin-top: 1px;
            }
 
            .variant-time {
@@ -555,7 +560,6 @@ body {
             font-weight: 300;
             font-size: 11px;
             color: var(--muted);
-            align-items: baseline;
            }
 
            .variant-price {
@@ -563,7 +567,6 @@ body {
             font-weight: 300;
             font-size: 11px;
             color: var(--muted);
-            align-items: baseline;
            }
 
 
