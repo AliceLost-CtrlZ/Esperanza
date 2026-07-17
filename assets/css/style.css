@@ -232,7 +232,7 @@ body {
    .section-body {
     font-family: 'Averia Serif Libre', Georgia, serif;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1.7;
     color: var(--muted);
     margin: 0;
@@ -520,7 +520,6 @@ body {
            .variant-item {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
             margin-bottom: 1rem;
             align-items: baseline;
            }
